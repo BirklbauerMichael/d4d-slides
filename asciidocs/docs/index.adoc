@@ -1,4 +1,41 @@
-= Hello
-ifndef::imagesdir[:imagesdir: images]
+= ERD - grob
 
-image::img.png[]
+["plantuml"]
+--
+@startuml
+entity "User" as User {
+
+}
+
+entity "TypeOfService" as TypeOfService {
+
+}
+
+entity "Service" as Service {
+
+}
+
+entity "Market" as Market {
++Offer: boolean
+}
+
+entity "ChatEntry" as ChatEntry {
+
+}
+
+entity "Review" as Review {
+
+}
+
+User <-- ChatEntry
+User <-- Review
+User <-- Review
+Review --> TypeOfService
+ChatEntry --> User
+TypeOfService <-- Market
+Service --> Market
+Service --> Market
+Service <--> Service
+Market --> User
+@enduml
+--
