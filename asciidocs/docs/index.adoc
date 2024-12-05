@@ -1,5 +1,11 @@
-= ERD - grob
+== D4D
+* Vlad Guran - Projektleiter, Frontend
+* Leon Zehetner - Frontend, Backend
+* Michael Birklbauer - Backend
+* Stefan Jelic - Backend, Datenbanken
+* Semih Yüzüak - Datenbanken
 
+== ERD - grob
 ["plantuml"]
 --
 @startuml
